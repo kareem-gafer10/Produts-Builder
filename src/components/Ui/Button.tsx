@@ -1,7 +1,7 @@
-import { ReactNode,  } from "react";
+import { ReactNode,ButtonHTMLAttributes  } from "react";
 
 
-    interface IProos{
+    interface IProos extends ButtonHTMLAttributes<HTMLButtonElement>{
         children:ReactNode;
         className?: string;
          width?: "w-full" | "w-fit";
@@ -17,3 +17,4 @@ const Button = ({children,className,width = "w-full", ...rest}:IProos) => {
 }
 
 export default Button
+
