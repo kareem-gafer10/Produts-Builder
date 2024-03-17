@@ -10,7 +10,7 @@ import { ReactNode,ButtonHTMLAttributes  } from "react";
 
 const Button = ({children,className,width = "w-full", ...rest}:IProos) => {
   return (
-    <button className={`${className} ${width} p-2  rounded-md text-white`}  {...rest}>
+    <button className={`${className} ${width} p-2  rounded-lg text-white`}  {...rest}>
         {children}
     </button>
   )
